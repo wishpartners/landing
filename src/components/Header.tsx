@@ -1,6 +1,6 @@
 "use client";
 
-import { REGISTRATION_URL } from "@/data/consts";
+import { LOGIN_URL, REGISTRATION_URL } from "@/data/consts";
 import { X, Menu } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
@@ -72,54 +72,64 @@ export default function Header() {
         <div
           className={`fixed inset-0 bg-black z-[99] transition-transform duration-300 ${
             isMenuOpen ? "translate-y-0" : "-translate-y-full"
-          } max-xl:flex flex-col hidden pt-24 px-4 h-fit pb-6 rounded-b-2xl isolate`}
+          } max-xl:flex flex-col hidden pt-24 px-4 pb-6 rounded-b-2xl isolate h-[100dvh]`}
         >
-          <div className="flex flex-col gap-9 items-center py-20 pointer-events-auto">
-            <a
-              onClick={(e) => {
-                smoothScroll(e, "our-brands");
-                toggleMenu();
-              }}
-              href="#our-brands"
-              className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
-            >
-              Our Brands
-            </a>
-            <a
-              onClick={(e) => {
-                smoothScroll(e, "benefits");
-                toggleMenu();
-              }}
-              href="#benefits"
-              className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
-            >
-              Benefits
-            </a>
-            <a
-              onClick={(e) => {
-                smoothScroll(e, "faq");
-                toggleMenu();
-              }}
-              href="#faq"
-              className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
-            >
-              FAQ
-            </a>
-            <a
-              onClick={(e) => {
-                smoothScroll(e, "contacts");
-                toggleMenu();
-              }}
-              href="#contacts"
-              className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
-            >
-              Contacts
-            </a>
+          <div className="flex flex-col justify-between items-center py-20 pointer-events-auto h-full">
+            <div className="flex flex-col gap-9">
+              <a
+                onClick={(e) => {
+                  smoothScroll(e, "our-brands");
+                  toggleMenu();
+                }}
+                href="#our-brands"
+                className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
+              >
+                Our Brands
+              </a>
+              <a
+                onClick={(e) => {
+                  smoothScroll(e, "benefits");
+                  toggleMenu();
+                }}
+                href="#benefits"
+                className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
+              >
+                Benefits
+              </a>
+              <a
+                onClick={(e) => {
+                  smoothScroll(e, "faq");
+                  toggleMenu();
+                }}
+                href="#faq"
+                className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
+              >
+                FAQ
+              </a>
+              <a
+                onClick={(e) => {
+                  smoothScroll(e, "contacts");
+                  toggleMenu();
+                }}
+                href="#contacts"
+                className="text-white text-3xl font-unbounded font-semibold leading-[22px] uppercase cursor-pointer hover:opacity-80 transition-opacity"
+              >
+                Contacts
+              </a>
+            </div>
+            <div className="flex flex-col gap-10">
+              <a className="button" href={REGISTRATION_URL}>
+                Become a Partner
+              </a>
+              <a className="button" href={LOGIN_URL}>
+                Login
+              </a>
+            </div>
           </div>
         </div>
-        <div className="max-xl:hidden">
-          <a className="button" href={REGISTRATION_URL}>
-            Become a Partner
+        <div className="max-xl:hidden flex gap-4">
+          <a className="button" href={LOGIN_URL}>
+            Login
           </a>
         </div>
       </div>
