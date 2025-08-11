@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: linear-gradient(177deg, #504D97 2.6%, #0D0D0D 6.84%, #2F2462 20.15%, #0D0D0E 29.64%, #13131A 55.38%, #3D3B71 70.07%, #13131A 76.14%, #1D1C2E 91.84%, #504D97 98.37%);
+  --foreground: #FFFFFF;
+  --secondary-blue: #B6C4E7;
+
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-inter: var(--font-inter);
+  --font-unbounded: var(--font-unbounded);
+  --color-secondary-blue: var(--secondary-blue);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: linear-gradient(174deg, #504D97 2.6%, #0D0D0D 6.84%, #2F2462 20.15%, #0D0D0E 29.64%, #13131A 55.38%, #3D3B71 70.07%, #13131A 76.14%, #1D1C2E 91.84%, #504D97 98.37%);
+    --foreground: #FFFFFF;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), var(--font-unbounded);
+}
+
+.button {
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 60px;
+  background: radial-gradient(43.74% 100% at 50% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #7773FF;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22.757px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.button-hero {
+  padding: 24px 40px;
+  color: #FFF;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.32);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.button-777 {
+  display: inline-flex;
+  padding: 34px 58px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  color: #FFF;
+  text-align: center;
+  text-shadow: 0 1.4px 0 rgba(255, 255, 255, 0.32);
+  font-family: Inter;
+  font-size: 29px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+
+  @media (max-width: 80rem) {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #BFD0EF -6.86%, #FFF 52.54%, #D9B6E0 107.37%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.radial-gradient-777 {
+  border-radius: 1141px;
+  background: radial-gradient(50% 50% at 50% 50%, #827EFF 0%, #504D98 44.5%, #2C2B4E 65.34%, rgba(31, 30, 52, 0.00) 77.85%);
+  filter: blur(69.1px);
+}
