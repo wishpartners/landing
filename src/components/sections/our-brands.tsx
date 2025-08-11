@@ -25,7 +25,7 @@ export default function OurBrands() {
         Our Brands
       </h2>
       <div className="flex flex-row flex-wrap items-center justify-center gap-12">
-        <BrandCard>
+        <BrandCard link="https://bit.ly/nurwin">
           <Image
             src="/assets/nurwin.svg"
             alt="nurwin"

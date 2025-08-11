@@ -48,6 +48,11 @@ body {
   text-transform: uppercase;
 }
 
+.button:hover {
+  background: radial-gradient(43.74% 100% at 50% 0%, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%), #5555FF;
+
+}
+
 .button-hero {
   padding: 24px 40px;
   color: #FFF;
@@ -95,4 +100,13 @@ body {
   border-radius: 1141px;
   background: radial-gradient(50% 50% at 50% 50%, #827EFF 0%, #504D98 44.5%, #2C2B4E 65.34%, rgba(31, 30, 52, 0.00) 77.85%);
   filter: blur(69.1px);
+}
+
+.bg-nurwin {
+  background: linear-gradient(180deg, #5D5AB2 0%, #4F439D 24.05%, #412C88 57.69%, #3D2581 100%, #2F2059 100%);
+}
+
+.bg-nurwin:hover {
+  background: radial-gradient(50% 50% at 50% 50%, #390B9D 0%, #3D2581 40%, #2F2059 100%);
+  box-shadow: 0 0 48px 0 rgba(181, 194, 227, 0.16) inset;
 }
