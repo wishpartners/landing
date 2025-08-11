@@ -7,7 +7,7 @@ export default function Section777() {
       <div className="absolute top-0 w-full h-full radial-gradient-777 -z-1" />
       <Image
         className="max-xl:w-[100vw]"
-        src="/assets/777.png"
+        src="/assets/777-min.png"
         alt="777"
         width={855}
         height={170}

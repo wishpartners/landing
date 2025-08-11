@@ -9,14 +9,14 @@ export default function Contacts() {
     >
       <Image
         className="absolute -bottom-20 right-0 -z-1 max-xl:hidden"
-        src="/assets/asset-contact-2.png"
+        src="/assets/asset-contact-2-min.png"
         alt="contacts"
         width={1278}
         height={771}
       />
       <Image
         className="absolute top-25 left-70 -z-1 max-xl:hidden"
-        src="/assets/asset-contact-1.png"
+        src="/assets/asset-contact-1-min.png"
         alt="contacts"
         width={345}
         height={241}
@@ -59,7 +59,7 @@ export default function Contacts() {
           </a>
         </div>
         <Image
-          src="/assets/contacts.png"
+          src="/assets/contacts-min.png"
           alt="contacts"
           width={480}
           height={398}

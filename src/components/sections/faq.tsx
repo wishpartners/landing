@@ -7,14 +7,14 @@ export default function Faq() {
     <section className="relative w-full" id="faq">
       <Image
         className="absolute top-100 left-0 -z-1 max-xl:hidden"
-        src="/assets/asset-faq-1.png"
+        src="/assets/asset-faq-1-min.png"
         alt="faq"
         width={467}
         height={1123}
       />
       <Image
         className="absolute top-100 right-0 -z-1 max-xl:hidden"
-        src="/assets/asset-faq-2.png"
+        src="/assets/asset-faq-2-min.png"
         alt="faq"
         width={518}
         height={949}

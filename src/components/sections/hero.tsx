@@ -16,14 +16,14 @@ export default function Hero() {
         </a>
       </div>
       <Image
-        src="/assets/hero.png"
+        src="/assets/hero-min.png"
         alt="hero"
         className="absolute top-0 right-0 -z-1 max-xl:hidden"
         width={1618}
         height={1285}
       />
       <Image
-        src="/assets/hero-mobile.png"
+        src="/assets/hero-mobile-min.png"
         alt="hero"
         className="absolute -top-10 right-0 -z-1 max-xl:block hidden"
         width={440}

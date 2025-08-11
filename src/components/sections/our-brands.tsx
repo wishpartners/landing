@@ -9,14 +9,14 @@ export default function OurBrands() {
     >
       <Image
         className="absolute top-0 left-0 -z-1"
-        src="/assets/asset-brands-1.png"
+        src="/assets/asset-brands-1-min.png"
         alt="our-brands"
         width={405}
         height={516}
       />
       <Image
         className="absolute top-50 right-0 -z-1"
-        src="/assets/asset-brands-2.png"
+        src="/assets/asset-brands-2-min.png"
         alt="our-brands"
         width={382}
         height={263}
