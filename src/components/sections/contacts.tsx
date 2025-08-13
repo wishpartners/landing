@@ -32,7 +32,7 @@ export default function Contacts() {
           </p>
           <div className="flex flex-col items-start justify-center">
             <p className="text-secondary-blue text-2xl max-xl:text-lg font-medium font-inter">
-              Email:
+              Email:{" "}
               <a
                 className="text-[#8182FE] text-2xl max-xl:text-lg font-semibold font-inter"
                 href="mailto:info@wishpartners.io"
@@ -41,7 +41,7 @@ export default function Contacts() {
               </a>
             </p>
             <p className="text-secondary-blue text-2xl max-xl:text-lg font-medium font-inter">
-              Telegram:
+              Telegram:{" "}
               <a
                 className="text-[#8182FE] text-2xl max-xl:text-lg font-semibold font-inter"
                 href="https://t.me/aff_wish"
